@@ -1,95 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <!--Meta setup - Required for apple device-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="project/img/welcome/favicon.png" />
+
     <!--Title-->
     <title>Donna Hay - Home</title>
 
-	<!--Required libraries-->
-    <script src="js/min/jquery-v1.10.2.min.js" type="text/javascript"></script>
-    <script src="js/min/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
-    <script src="js/min/hammer-v2.0.3.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.js" type="text/javascript"></script>
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <!--Include fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
-    <!--Include Webplate-->
-	  <link href="css/flickerplate.css"  type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="css/hamburgler.css">
-    <script src="js/min/flickerplate.min.js" type="text/javascript"></script>
-    <script src="js/hamburgler.js"> </script>
+    <!--Include webplate-->
+    <script id="webplate-stack" src="stack.js"></script>
 
+    <!-- Everything Else -->
 
-	<!--Execute flickerplate-->
-	<script>
-	$(function(){
-		$('.flicker-example').flickerplate(
-		{
-      arrows                  : false,
-      arrows_constraint       : false,
-      auto_flick              : true,
-      auto_flick_delay        : 5,
-      block_text              : false,
-      dot_navigation          : false,
-      dot_alignment           : 'right',
-      flick_animation         : 'transition-slide'
-        });
-	});
-	</script>
+  </head>
 
-	<!-- Demo styles -->
-	<link href="css/demo.css"  type="text/css" rel="stylesheet">
+  <body style="display: none;" data-icon-font="icomoon" data-ui="stripe" data-project-css="welcome.css" data-project-js="min/welcome.min.js" data-formplate-colour="aqua" class="invert">
 
-  <!-- Nav Bar -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand"><div class="mobilenav">
+	   <!-- Navigation -->
+	    <nav class="absolute">
+        <div class="contain">
+          <ul class="navigation">
+            <li><a href="shop.html">SHOP</a></li>
+			      <li><a href="recipes.html">RECIPES</a></li>
+            <li><a href="Biography/index.html">BIOGRAPHY</a></li>
+          </ul>
+          <div class="logo-container">
+            <a href="#" class="logo-line">Donna Hay</a>
+          </div>
+        </div>
+      </nav>
 
-      <li><a style="text-decoration:none" href="index.html">Home</a></li>
-      <br>
-      <li><a style="text-decoration:none" href="shop.html">Shop</a></li>
-      <br>
-      <li><a style="text-decoration:none" href="#">Recipes</a></li>
-      <br>
-      <li><a style="text-decoration:none" href="#">Books</a></li>
-      <br>
-      <li><a style="text-decoration:none" href="#">Contact</a></li>
-    </div>
-
-    <a href="javascript:void(0)" class="icon">
-      <div class="hamburger">
-        <div class="menui top-menu"></div>
-        <div class="menui mid-menu"></div>
-        <div class="menui bottom-menu"></div>
+      <!-- Header -->
+      <header class="stripe full">
+        <a href="#" class="navigation-trigger icon-menu"></a>
+    		<div class="contain">
+    			<div class="text-center-tight"><div class="inner">
+    				<h2>Welcome To Donna Hay</h2>
+            <h5>Check out my <a href="#" style="text-decoration:none" >Recipes</a> <br> By some new kitchenware from <a href="shop.html" style="text-decoration:none">My Shop</a></h5>
+    			</div>
+        </div>
       </div>
-    </a></a>
+    		<div class="bg-image"></div>
+      </header>
 
-    <p class="navbar-text" >Donna Hay</p>
-
-
-      </div>
-    </div>
-  </nav>
-</head>
-<body>
-
-	<!--Basic example-->
-
-
-	<div class="flicker-example">
-		<ul>
-			<li data-background="img/Background-1.jpg">
-        <div class="flick-title-right" ><font size="20" color="#181818">Vist my Catalogue</font></div>
-        <div class="flick-title-right2"><font size="20" color="#181818">of Recipies</font> </div>
-      </li>
-
-			<li data-background="img/Background-2.jpg">
-        <div class="flick-title"> <font size="20" color="#181818">Visit my Shop</font></div>
-			</li>
-		</ul>
-	</div>
-</body>
+      <!-- Getting started -->
+	    <div class="stripe contain" id="getting-started">
+        <h3> News </h3>
+		    <h4>Subscribe to my mailing list</h4>
+		    <p>Please put your infromation into the subscription box. <b> &nbsp;&nbsp;&nbsp;&nbsp; <b><button class="modal-trigger btn-primary" data-modal-open="modal-form">Subscribe*</button>
+        <div class="modalplate" data-modal-id="modal-form">
+          <a href="#" class="close icon-cross"></a>
+          <form method="post" action="#">
+            <h5>Subscribe</h5>
+            <label for="name">Name</label>
+            <div class="input-outer">
+              <input type="text" name="name" id="name">
+            </div>
+            <label for="email">Email Address</label>
+            <div class="input-outer">
+              <input type="text" name="email" id="email">
+            </div>
+            <div class="options">
+              <button class="btn-cancel close">Cancel</button>
+              <button type="submit" class="btn-ok">Submit</button>
+            </div>
+          </form>
+        </div>
+        <p>* At this moment this feature does not register your name. For demo purposes only.</p>
+        <!-- TRY -->
+    </body>
 </html>

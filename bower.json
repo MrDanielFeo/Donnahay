@@ -1,18 +1,27 @@
 {
-  "name": "Flickerplate",
-  "version": "2.1.1",
-  "homepage": "http://getwebplate.com/plugins/flickerplate",
+  "name": "Webplate",
+  "version": "2.5.9",
+  "homepage": "https://getwebplate.com",
   "authors": [
     "Chris Humboldt <chrismodem@gmail.com>"
   ],
-  "description": "A cool jQuery plugin that lets you flick through content.",
-  "main": "js/min/flickerplate.min.js",
+  "description": "An awesome front-end framework that lets you stay focused on building your site or app all the while remaining really easy to use.",
+  "main": "stack.js",
   "keywords": [
     "Webplate",
-    "Flickerplate",
-    "Slider",
+    "UI",
+    "Framework",
+    "Responsive",
     "jQuery",
-    "Javascript"
+    "SASS",
+    "Blueplate",
+    "Modernizr",
+    "Hammer.js",
+    "Velocity.js",
+    "Buttonplate",
+    "Modalplate",
+    "Formplate",
+    "Flickerplate"
   ],
   "license": "Apache License, Version 2.0",
   "ignore": [
@@ -21,14 +30,8 @@
     "bower_components",
     "test",
     "tests",
-    "gruntfile.js",
-    "package.json",
-    "index.html",
+    "core/grunt/node_modules",
     "bower.json",
-    "img",
-    "sass",
-    "css/demo.css",
-    "css/demo.map.css",
-    "css/flickerplate.css.map"
+    "index.html"
   ]
 }
